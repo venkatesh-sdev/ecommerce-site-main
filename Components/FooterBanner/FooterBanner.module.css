@@ -1,0 +1,148 @@
+
+
+.Banner{
+    border-radius:20px;
+    margin: 30px 0;
+    padding:2rem 4rem;
+    /* background-color: rgb(158, 158, 158) */
+    background-color: #ff8a4b;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+}
+
+.temp_Container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Banner__image{
+    width:350px;
+    height:350px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:490px) {
+    .Banner{
+        display: flex;
+        text-align: center;
+        padding:20px 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Banner__image{
+        position: static;
+        transform: translateY(0);
+        display: block;
+        width:250px;
+        height:250px;
+    }
+
+    .Banner_largeText_1{
+        font-size:2.5rem !important;
+    }
+    .Banner_largeText_2{
+        font-size:1.5rem !important;
+        color:#000;
+    }
+    .Banner__button{
+        padding:10px 20px;
+        font-size:1rem;
+    }
+    .Banner_midText{
+        font-size:1.3rem !important;
+    }
+    .Banner_smallText{
+        font-size:1rem !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Banner_largeText_1{
+        font-size:3rem !important;
+    }
+    .Banner_largeText_2{
+        font-size:1.8rem !important;
+        color:#000;
+    }
+    .Banner__button{
+        padding:10px 20px;
+        font-size:1.2rem;
+    }
+    .Banner_midText{
+        font-size:1.5rem !important;
+    }
+    .Banner_smallText{
+        font-size:1.05rem !important;
+    }
+}
+@media screen and (max-width:1200px) {
+    .Banner{
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+.Banner_smallText{
+    color:#000;
+    font-size:1.2rem;
+    font-weight:500;
+    padding:10px 0;
+}
+.Banner_midText{
+    color:rgb(69, 69, 69);
+    font-size:2.3rem;
+}
+.Banner_largeText_1{
+    color:rgb(255, 255, 255);
+    font-size:5rem;
+
+}
+.Banner_largeText_2{
+    font-size:2rem;
+    color:#000;
+}
+
+.Banner_button_container{
+    padding: 0 2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.Banner__button{
+    border:none;
+    padding: 10px 30px;
+    font-size:1.05rem;
+    background:rgb(0, 121, 251);
+    color:#ffffff;
+    border-radius:10px;
+    font-weight:500;
+    margin-top:10px;
+
+    cursor:pointer;
+}
+
+.Banner__button:active{
+    scale: 0.98;
+}
+
+.text_Container{
+ text-align: center;
+}
+.image__desc__Container{
+    text-align: center;
+}
+.image__desc__Container > p{
+    font-size:1.2rem;
+    font-weight: 500;
+}

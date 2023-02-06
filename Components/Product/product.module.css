@@ -1,0 +1,37 @@
+.Product_card{
+    width:250px;
+    transition:all .5s;
+    margin-top:20px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* background-color: rgb(168, 207, 255) */
+    background-color: #7ab3f9;
+    border-radius:20px;
+    transition: all .3s;
+}
+
+
+.Product__image{
+    width:200px;
+    object-fit: contain;
+}
+
+.Product__name{
+    font-size:1.1rem;
+}
+
+.Product__price{
+    font-weight: bold;
+}
+
+.Product__Link{
+    color:white;
+    display: block;
+    transition:all .3s;
+}
+.Product__Link:hover {
+    transform:scale(1.05);
+}

@@ -1,0 +1,47 @@
+.wrapper{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .successContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 200px;
+    border-radius:20px;
+  }
+  
+  .icon > svg{
+    font-size:50px;
+    fill:white;
+  }
+  
+  .successContainer h2{
+    font-size:30px;
+    color:white;
+    margin:20px 0;
+  }
+  
+  .button{
+    padding:10px 30px;
+    background:rgb(255, 21, 0);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .button:active{
+    scale:0.98;
+  }
+  
+  @media screen and (max-width:400px) {
+    .successContainer h2{
+      font-size:20px;
+    }
+  }

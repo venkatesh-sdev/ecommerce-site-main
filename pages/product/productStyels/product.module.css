@@ -1,0 +1,204 @@
+.container {
+  padding: 50px;
+  color: white;
+}
+
+.productContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.productImageContainer {
+  width: 400px;
+  height: 400px;
+  background: #7ab3f9;
+  border-radius: 20px;
+}
+
+.productImageContainer > img {
+  width: 400px;
+  object-fit: contain;
+}
+
+.smallImageContainerContain {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(0, 97, 157);
+}
+
+.smallImageContainer {
+  display: flex;
+  gap: 25px;
+}
+.smallImageContainer img {
+  width: 70px;
+  object-fit: contain;
+}
+
+.smallImageContainerContainSelected {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(157, 16, 0);
+}
+
+.Product__details__Container{
+  display: block;
+}
+
+.starContainer {
+  display: flex;
+  align-items: center;
+}
+
+.starContainer > svg {
+  fill: orange;
+}
+
+.starContainer > span {
+  margin-left: 10px;
+}
+
+.details > p {
+  margin: 10px 0;
+}
+.quanity {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap:wrap;
+}
+.quanity_desc {
+  margin-left: 40px;
+}
+.quanity_desc span {
+  border: 1px solid white;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 20px;
+  width: 50px;
+  transition: background 0.5s ease-out;
+  margin: 20px 0px;
+}
+.quanity_desc span:hover {
+  background-color: white;
+  color: rgb(44, 44, 213);
+}
+
+.quanity_desc span > svg {
+  width: 18px;
+  font-weight: 500px;
+}
+
+.buttonContianer {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.buttonContianer button {
+  padding: 10px 30px;
+  background-color: rgba(255, 68, 0, 0.8);
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.buttonContianer button:nth-child(1) {
+  background: white;
+  color: rgb(255, 68, 0);
+  border: 1px solid rgb(255, 68, 0);
+}
+
+.buttonContianer button:nth-child(1):hover {
+  background: white;
+  color: rgb(255, 68, 0);
+  border: 1px solid rgb(255, 68, 0);
+}
+
+.buttonContianer button:hover {
+  background: rgb(255, 68, 0);
+}
+
+@media screen and (max-width:900px){
+  .productContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Product__details__Container{
+    margin:70px;
+  }
+  .container {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .productImageContainer {
+    width: 250px;
+    height: 250px;
+  }
+  .productImageContainer > img{
+    width:250px;
+    object-fit: contain;
+  }
+
+  .smallImageContainerContain {
+    width: 50px;
+    height: 50px;
+  }
+  .smallImageContainerContain > img{
+    width:50px;
+    object-fit: contain;
+  }
+  .smallImageContainerContainSelected{
+    width:50px;
+    height:50px;
+  }
+  .smallImageContainerContainSelected{
+    width:50px;
+  }
+
+  .smallImageContainer {
+    gap: 18px;
+  }
+
+  .Product__details__Container{
+    margin:50px;
+  }
+
+  .Product__details__Container > h1{
+    font-size:25px;
+  }
+  .container {
+    padding: 15px;
+  }
+  .buttonContianer button {
+    padding: 5px 15px;
+  }
+  .quanity_desc span {
+   padding:5px 15px;
+  }
+  .quanity {
+    margin-top:30px;
+    gap:15px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .quanity_desc {
+    margin-left: 10px;
+  }
+  
+  
+}
